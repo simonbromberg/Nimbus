@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D418AE1827E2EF73007100AC /* NimbusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE1727E2EF73007100AC /* NimbusApp.swift */; };
+		D418AE1A27E2EF73007100AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE1927E2EF73007100AC /* ContentView.swift */; };
+		D418AE1C27E2EF77007100AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D418AE1B27E2EF77007100AC /* Assets.xcassets */; };
+		D418AE1F27E2EF77007100AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D418AE1E27E2EF77007100AC /* Preview Assets.xcassets */; };
+		D418AE2927E2EF78007100AC /* NimbusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE2827E2EF78007100AC /* NimbusTests.swift */; };
+		D418AE3327E2EF78007100AC /* NimbusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE3227E2EF78007100AC /* NimbusUITests.swift */; };
+		D418AE3527E2EF78007100AC /* NimbusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE3427E2EF78007100AC /* NimbusUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D418AE2527E2EF78007100AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D418AE0C27E2EF72007100AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D418AE1327E2EF72007100AC;
+			remoteInfo = Nimbus;
+		};
+		D418AE2F27E2EF78007100AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D418AE0C27E2EF72007100AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D418AE1327E2EF72007100AC;
+			remoteInfo = Nimbus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D418AE1427E2EF72007100AC /* Nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D418AE1727E2EF73007100AC /* NimbusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusApp.swift; sourceTree = "<group>"; };
+		D418AE1927E2EF73007100AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D418AE1B27E2EF77007100AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D418AE1E27E2EF77007100AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D418AE2427E2EF78007100AC /* NimbusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D418AE2827E2EF78007100AC /* NimbusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusTests.swift; sourceTree = "<group>"; };
+		D418AE2E27E2EF78007100AC /* NimbusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D418AE3227E2EF78007100AC /* NimbusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusUITests.swift; sourceTree = "<group>"; };
+		D418AE3427E2EF78007100AC /* NimbusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D418AE1127E2EF72007100AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D418AE2127E2EF78007100AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D418AE2B27E2EF78007100AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D418AE0B27E2EF72007100AC = {
+			isa = PBXGroup;
+			children = (
+				D418AE1627E2EF72007100AC /* Nimbus */,
+				D418AE2727E2EF78007100AC /* NimbusTests */,
+				D418AE3127E2EF78007100AC /* NimbusUITests */,
+				D418AE1527E2EF72007100AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D418AE1527E2EF72007100AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D418AE1427E2EF72007100AC /* Nimbus.app */,
+				D418AE2427E2EF78007100AC /* NimbusTests.xctest */,
+				D418AE2E27E2EF78007100AC /* NimbusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D418AE1627E2EF72007100AC /* Nimbus */ = {
+			isa = PBXGroup;
+			children = (
+				D418AE1727E2EF73007100AC /* NimbusApp.swift */,
+				D418AE1927E2EF73007100AC /* ContentView.swift */,
+				D418AE1B27E2EF77007100AC /* Assets.xcassets */,
+				D418AE1D27E2EF77007100AC /* Preview Content */,
+			);
+			path = Nimbus;
+			sourceTree = "<group>";
+		};
+		D418AE1D27E2EF77007100AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D418AE1E27E2EF77007100AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D418AE2727E2EF78007100AC /* NimbusTests */ = {
+			isa = PBXGroup;
+			children = (
+				D418AE2827E2EF78007100AC /* NimbusTests.swift */,
+			);
+			path = NimbusTests;
+			sourceTree = "<group>";
+		};
+		D418AE3127E2EF78007100AC /* NimbusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D418AE3227E2EF78007100AC /* NimbusUITests.swift */,
+				D418AE3427E2EF78007100AC /* NimbusUITestsLaunchTests.swift */,
+			);
+			path = NimbusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D418AE1327E2EF72007100AC /* Nimbus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D418AE3827E2EF78007100AC /* Build configuration list for PBXNativeTarget "Nimbus" */;
+			buildPhases = (
+				D418AE1027E2EF72007100AC /* Sources */,
+				D418AE1127E2EF72007100AC /* Frameworks */,
+				D418AE1227E2EF72007100AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nimbus;
+			productName = Nimbus;
+			productReference = D418AE1427E2EF72007100AC /* Nimbus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D418AE2327E2EF78007100AC /* NimbusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D418AE3B27E2EF78007100AC /* Build configuration list for PBXNativeTarget "NimbusTests" */;
+			buildPhases = (
+				D418AE2027E2EF78007100AC /* Sources */,
+				D418AE2127E2EF78007100AC /* Frameworks */,
+				D418AE2227E2EF78007100AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D418AE2627E2EF78007100AC /* PBXTargetDependency */,
+			);
+			name = NimbusTests;
+			productName = NimbusTests;
+			productReference = D418AE2427E2EF78007100AC /* NimbusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D418AE2D27E2EF78007100AC /* NimbusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D418AE3E27E2EF78007100AC /* Build configuration list for PBXNativeTarget "NimbusUITests" */;
+			buildPhases = (
+				D418AE2A27E2EF78007100AC /* Sources */,
+				D418AE2B27E2EF78007100AC /* Frameworks */,
+				D418AE2C27E2EF78007100AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D418AE3027E2EF78007100AC /* PBXTargetDependency */,
+			);
+			name = NimbusUITests;
+			productName = NimbusUITests;
+			productReference = D418AE2E27E2EF78007100AC /* NimbusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D418AE0C27E2EF72007100AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D418AE1327E2EF72007100AC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D418AE2327E2EF78007100AC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D418AE1327E2EF72007100AC;
+					};
+					D418AE2D27E2EF78007100AC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D418AE1327E2EF72007100AC;
+					};
+				};
+			};
+			buildConfigurationList = D418AE0F27E2EF72007100AC /* Build configuration list for PBXProject "Nimbus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D418AE0B27E2EF72007100AC;
+			productRefGroup = D418AE1527E2EF72007100AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D418AE1327E2EF72007100AC /* Nimbus */,
+				D418AE2327E2EF78007100AC /* NimbusTests */,
+				D418AE2D27E2EF78007100AC /* NimbusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D418AE1227E2EF72007100AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D418AE1F27E2EF77007100AC /* Preview Assets.xcassets in Resources */,
+				D418AE1C27E2EF77007100AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D418AE2227E2EF78007100AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D418AE2C27E2EF78007100AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D418AE1027E2EF72007100AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D418AE1A27E2EF73007100AC /* ContentView.swift in Sources */,
+				D418AE1827E2EF73007100AC /* NimbusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D418AE2027E2EF78007100AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D418AE2927E2EF78007100AC /* NimbusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D418AE2A27E2EF78007100AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D418AE3527E2EF78007100AC /* NimbusUITestsLaunchTests.swift in Sources */,
+				D418AE3327E2EF78007100AC /* NimbusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D418AE2627E2EF78007100AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D418AE1327E2EF72007100AC /* Nimbus */;
+			targetProxy = D418AE2527E2EF78007100AC /* PBXContainerItemProxy */;
+		};
+		D418AE3027E2EF78007100AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D418AE1327E2EF72007100AC /* Nimbus */;
+			targetProxy = D418AE2F27E2EF78007100AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D418AE3627E2EF78007100AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D418AE3727E2EF78007100AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D418AE3927E2EF78007100AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nimbus/Preview Content\"";
+				DEVELOPMENT_TEAM = 7289C5AAFZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbromberg.Nimbus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D418AE3A27E2EF78007100AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nimbus/Preview Content\"";
+				DEVELOPMENT_TEAM = 7289C5AAFZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbromberg.Nimbus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D418AE3C27E2EF78007100AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7289C5AAFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbromberg.NimbusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nimbus.app/Nimbus";
+			};
+			name = Debug;
+		};
+		D418AE3D27E2EF78007100AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7289C5AAFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbromberg.NimbusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nimbus.app/Nimbus";
+			};
+			name = Release;
+		};
+		D418AE3F27E2EF78007100AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7289C5AAFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbromberg.NimbusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nimbus;
+			};
+			name = Debug;
+		};
+		D418AE4027E2EF78007100AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7289C5AAFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbromberg.NimbusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nimbus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D418AE0F27E2EF72007100AC /* Build configuration list for PBXProject "Nimbus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D418AE3627E2EF78007100AC /* Debug */,
+				D418AE3727E2EF78007100AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D418AE3827E2EF78007100AC /* Build configuration list for PBXNativeTarget "Nimbus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D418AE3927E2EF78007100AC /* Debug */,
+				D418AE3A27E2EF78007100AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D418AE3B27E2EF78007100AC /* Build configuration list for PBXNativeTarget "NimbusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D418AE3C27E2EF78007100AC /* Debug */,
+				D418AE3D27E2EF78007100AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D418AE3E27E2EF78007100AC /* Build configuration list for PBXNativeTarget "NimbusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D418AE3F27E2EF78007100AC /* Debug */,
+				D418AE4027E2EF78007100AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D418AE0C27E2EF72007100AC /* Project object */;
+}
