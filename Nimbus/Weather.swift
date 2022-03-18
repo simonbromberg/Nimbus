@@ -7,8 +7,7 @@
 
 import Foundation
 
-typealias Temperature = Measurement<UnitTemperature>
-struct Weather {
+struct Weather: Equatable {
     let location: String
     let temperature: Temperature
     let low: Temperature
@@ -18,18 +17,22 @@ struct Weather {
     let stateAbbreviation: String
 }
 
-enum Location: String {
-    case Chicago = "2379574"
-    case London = "44418"
-    case LosAngeles = "2442047"
-    case NewYork = "2459115"
-    case SanFrancisco = "2487956"
-    case Sydney = "1105779"
-    case Tokyo = "1118370"
-    case Toronto = "4118"
+extension Weather {
+    static let placeholder: Self = .init(
+        location: "--",
+        temperature: 0,
+        low: 0,
+        high: 0,
+        stateName: "--",
+        stateAbbreviation: "c"
+    )
 
-    var id: String {
-        rawValue
-    }
+    static let test: Self = .init(
+        location: "Toronto",
+        temperature: 16,
+        low: 11,
+        high: 17,
+        stateName: "Light Cloud",
+        stateAbbreviation: "lc"
+    )
 }
-

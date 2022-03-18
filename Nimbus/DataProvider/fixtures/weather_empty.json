@@ -1,0 +1,62 @@
+{
+   "consolidated_weather":[],
+   "time":"2022-03-17T00:50:05.087879-04:00",
+   "sun_rise":"2022-03-17T07:26:03.999170-04:00",
+   "sun_set":"2022-03-17T19:26:20.327067-04:00",
+   "timezone_name":"LMT",
+   "parent":{
+      "title":"Canada",
+      "location_type":"Country",
+      "woeid":23424775,
+      "latt_long":"56.954681,-98.308968"
+   },
+   "sources":[
+      {
+         "title":"BBC",
+         "slug":"bbc",
+         "url":"http://www.bbc.co.uk/weather/",
+         "crawl_rate":360
+      },
+      {
+         "title":"Forecast.io",
+         "slug":"forecast-io",
+         "url":"http://forecast.io/",
+         "crawl_rate":480
+      },
+      {
+         "title":"HAMweather",
+         "slug":"hamweather",
+         "url":"http://www.hamweather.com/",
+         "crawl_rate":360
+      },
+      {
+         "title":"Met Office",
+         "slug":"met-office",
+         "url":"http://www.metoffice.gov.uk/",
+         "crawl_rate":180
+      },
+      {
+         "title":"OpenWeatherMap",
+         "slug":"openweathermap",
+         "url":"http://openweathermap.org/",
+         "crawl_rate":360
+      },
+      {
+         "title":"Weather Underground",
+         "slug":"wunderground",
+         "url":"https://www.wunderground.com/?apiref=fc30dc3cd224e19b",
+         "crawl_rate":720
+      },
+      {
+         "title":"World Weather Online",
+         "slug":"world-weather-online",
+         "url":"http://www.worldweatheronline.com/",
+         "crawl_rate":360
+      }
+   ],
+   "title":"Toronto",
+   "location_type":"City",
+   "woeid":4118,
+   "latt_long":"43.648560,-79.385368",
+   "timezone":"America/Toronto"
+}

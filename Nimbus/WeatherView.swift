@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct WeatherView: View {
-    @State var weather: Weather = .placeholder
-    let dataProvider: DataProvider = NetworkProvider()
-
-    let location: Location = .Toronto
+    @Binding var weather: Weather
 
     var body: some View {
         VStack {
@@ -21,7 +18,7 @@ struct WeatherView: View {
                     .padding()
                 Spacer()
             }
-            CurrentWeather(
+            CurrentWeatherView(
                 iconName: weather.stateAbbreviation,
                 temperature: weather.temperature
             )
@@ -35,7 +32,7 @@ struct WeatherView: View {
     }
 }
 
-struct CurrentWeather: View {
+struct CurrentWeatherView: View {
     let iconName: String
     let temperature: Measurement<UnitTemperature>
 
@@ -54,36 +51,16 @@ struct CurrentWeather: View {
     }
 }
 
-private let temperatureFormat = Measurement<UnitTemperature>.FormatStyle(
+private let temperatureFormat = Temperature.FormatStyle(
     width: .narrow,
     numberFormatStyle: .number
 )
 
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView(weather: .test)
-        WeatherView(weather: .test)
+        WeatherView(weather: .constant(.test))
+        WeatherView(weather: .constant(.test))
             .preferredColorScheme(.dark)
             .environment(\.locale, .init(identifier: "en_CA"))
     }
-}
-
-extension Weather {
-    static let placeholder: Self = .init(
-        location: "Somewhere",
-        temperature: .init(value: 0, unit: .celsius),
-        low: .init(value: 0, unit: .celsius),
-        high: .init(value: 0, unit: .celsius),
-        stateName: "Sunny",
-        stateAbbreviation: "s"
-    )
-
-    static let test: Self = .init(
-        location: "Toronto",
-        temperature: .init(value: 16, unit: .celsius),
-        low: .init(value: 11, unit: .celsius),
-        high: .init(value: 17, unit: .celsius),
-        stateName: "Light Cloud",
-        stateAbbreviation: "lc"
-    )
 }
