@@ -11,7 +11,7 @@
 		D418AE1A27E2EF73007100AC /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE1927E2EF73007100AC /* WeatherView.swift */; };
 		D418AE1C27E2EF77007100AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D418AE1B27E2EF77007100AC /* Assets.xcassets */; };
 		D418AE1F27E2EF77007100AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D418AE1E27E2EF77007100AC /* Preview Assets.xcassets */; };
-		D418AE2927E2EF78007100AC /* NimbusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE2827E2EF78007100AC /* NimbusTests.swift */; };
+		D418AE2927E2EF78007100AC /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE2827E2EF78007100AC /* NetworkProviderTests.swift */; };
 		D418AE3327E2EF78007100AC /* NimbusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE3227E2EF78007100AC /* NimbusUITests.swift */; };
 		D418AE3527E2EF78007100AC /* NimbusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE3427E2EF78007100AC /* NimbusUITestsLaunchTests.swift */; };
 		D418AE4227E2F354007100AC /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418AE4127E2F354007100AC /* NetworkProvider.swift */; };
@@ -43,13 +43,14 @@
 		D418AE1B27E2EF77007100AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D418AE1E27E2EF77007100AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D418AE2427E2EF78007100AC /* NimbusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D418AE2827E2EF78007100AC /* NimbusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusTests.swift; sourceTree = "<group>"; };
+		D418AE2827E2EF78007100AC /* NetworkProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderTests.swift; sourceTree = "<group>"; };
 		D418AE2E27E2EF78007100AC /* NimbusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D418AE3227E2EF78007100AC /* NimbusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusUITests.swift; sourceTree = "<group>"; };
 		D418AE3427E2EF78007100AC /* NimbusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D418AE4127E2F354007100AC /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		D418AE4327E2F39B007100AC /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		D418AE4527E2F87C007100AC /* test_weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test_weather.json; sourceTree = "<group>"; };
+		D418AE4727E43CB2007100AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		D418AE0B27E2EF72007100AC = {
 			isa = PBXGroup;
 			children = (
+				D418AE4727E43CB2007100AC /* README.md */,
 				D418AE1627E2EF72007100AC /* Nimbus */,
 				D418AE2727E2EF78007100AC /* NimbusTests */,
 				D418AE3127E2EF78007100AC /* NimbusUITests */,
@@ -122,7 +124,7 @@
 		D418AE2727E2EF78007100AC /* NimbusTests */ = {
 			isa = PBXGroup;
 			children = (
-				D418AE2827E2EF78007100AC /* NimbusTests.swift */,
+				D418AE2827E2EF78007100AC /* NetworkProviderTests.swift */,
 			);
 			path = NimbusTests;
 			sourceTree = "<group>";
@@ -278,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D418AE2927E2EF78007100AC /* NimbusTests.swift in Sources */,
+				D418AE2927E2EF78007100AC /* NetworkProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
