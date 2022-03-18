@@ -62,6 +62,9 @@ private let temperatureFormat = Measurement<UnitTemperature>.FormatStyle(
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
         WeatherView(weather: .test)
+        WeatherView(weather: .test)
+            .preferredColorScheme(.dark)
+            .environment(\.locale, .init(identifier: "en_CA"))
     }
 }
 
