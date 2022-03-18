@@ -12,9 +12,21 @@ struct Weather: Equatable {
     let temperature: Temperature
     let low: Temperature
     let high: Temperature
-
+    let state: State?
     let stateName: String
-    let stateAbbreviation: String
+
+    enum State: String {
+        case clear = "c"
+        case hail = "h"
+        case heavyCloud = "hc"
+        case heavyRain = "hr"
+        case lightCloud = "lc"
+        case lightRain = "lr"
+        case showers = "s"
+        case sleet = "sl"
+        case snow = "sn"
+        case thunderstorm = "t"
+    }
 }
 
 extension Weather {
@@ -23,8 +35,8 @@ extension Weather {
         temperature: 0,
         low: 0,
         high: 0,
-        stateName: "--",
-        stateAbbreviation: "c"
+        state: .clear,
+        stateName: "--"
     )
 
     static let test: Self = .init(
@@ -32,7 +44,7 @@ extension Weather {
         temperature: 16,
         low: 11,
         high: 17,
-        stateName: "Light Cloud",
-        stateAbbreviation: "lc"
+        state: .lightCloud,
+        stateName: "Light Cloud"
     )
 }

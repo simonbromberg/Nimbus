@@ -19,7 +19,7 @@ struct WeatherView: View {
                 Spacer()
             }
             CurrentWeatherView(
-                iconName: weather.stateAbbreviation,
+                iconName: weather.state?.rawValue,
                 temperature: weather.temperature
             )
             .frame(maxHeight: 100)
@@ -33,14 +33,14 @@ struct WeatherView: View {
 }
 
 struct CurrentWeatherView: View {
-    let iconName: String
-    let temperature: Measurement<UnitTemperature>
+    let iconName: String?
+    let temperature: Temperature
 
     var body: some View {
         GeometryReader { geometry in
             HStack(alignment: .center) {
                 Spacer()
-                Image(iconName)
+                image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 Text("\(temperature, format: temperatureFormat)")
@@ -48,6 +48,12 @@ struct CurrentWeatherView: View {
                 Spacer()
             }
         }
+    }
+
+    var image: Image {
+        iconName.map {
+            Image($0)
+        } ?? Image(systemName: "questionmark.diamond")
     }
 }
 

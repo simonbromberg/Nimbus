@@ -27,8 +27,8 @@ extension DataProvider {
             temperature: Temperature(weather.theTemp),
             low: Temperature(weather.minTemp),
             high: Temperature(weather.maxTemp),
-            stateName: weather.weatherStateName,
-            stateAbbreviation: weather.weatherStateAbbr
+            state: .init(rawValue: weather.weatherStateAbbr),
+            stateName: weather.weatherStateName
         )
     }
 }
